@@ -1,0 +1,217 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 12
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 775  750  0    50   Input ~ 0
+In
+Text HLabel 775  875  0    50   Input ~ 0
+GND
+Text HLabel 10425 750  2    50   Output ~ 0
+Out
+$Comp
+L Device:R R?
+U 1 1 616F3198
+P 3350 1750
+F 0 "R?" V 3143 1750 50  0000 C CNN
+F 1 "100m" V 3234 1750 50  0000 C CNN
+F 2 "" V 3280 1750 50  0001 C CNN
+F 3 "~" H 3350 1750 50  0001 C CNN
+	1    3350 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_PMOS_SGD Q?
+U 1 1 616F4749
+P 4525 1850
+F 0 "Q?" V 4867 1850 50  0000 C CNN
+F 1 "Q_PMOS_SGD" V 4776 1850 50  0000 C CNN
+F 2 "" H 4725 1950 50  0001 C CNN
+F 3 "~" H 4525 1850 50  0001 C CNN
+F 4 "BSZ086P03NS3EGATMA " V 4525 1850 50  0001 C CNN "MPN"
+	1    4525 1850
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:Q_PNP_BEC Q?
+U 1 1 616F73F8
+P 3225 2625
+F 0 "Q?" H 3416 2579 50  0000 L CNN
+F 1 "Q_PNP_BEC" H 3416 2670 50  0000 L CNN
+F 2 "" H 3425 2725 50  0001 C CNN
+F 3 "~" H 3225 2625 50  0001 C CNN
+F 4 "BCR166E6327 " H 3225 2625 50  0001 C CNN "MPN"
+	1    3225 2625
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3125 1750 3200 1750
+$Comp
+L Device:R_POT RV?
+U 1 1 616FABF8
+P 4175 2400
+F 0 "RV?" H 4105 2446 50  0000 R CNN
+F 1 "2k" H 4105 2355 50  0000 R CNN
+F 2 "" H 4175 2400 50  0001 C CNN
+F 3 "~" H 4175 2400 50  0001 C CNN
+F 4 "1806WSMD-2K" H 4175 2400 50  0001 C CNN "MPN"
+	1    4175 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 616FC9B4
+P 4025 2875
+F 0 "R?" H 3955 2829 50  0000 R CNN
+F 1 "30k" H 3955 2920 50  0000 R CNN
+F 2 "" V 3955 2875 50  0001 C CNN
+F 3 "~" H 4025 2875 50  0001 C CNN
+	1    4025 2875
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61700803
+P 4025 1950
+F 0 "R?" H 3955 1904 50  0000 R CNN
+F 1 "2k4" H 3955 1995 50  0000 R CNN
+F 2 "" V 3955 1950 50  0001 C CNN
+F 3 "~" H 4025 1950 50  0001 C CNN
+	1    4025 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61703E74
+P 3700 2400
+F 0 "R?" H 3630 2354 50  0000 R CNN
+F 1 "12k" H 3630 2445 50  0000 R CNN
+F 2 "" V 3630 2400 50  0001 C CNN
+F 3 "~" H 3700 2400 50  0001 C CNN
+	1    3700 2400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3700 2250 3700 2225
+Wire Wire Line
+	3700 2225 4025 2225
+Connection ~ 4025 2225
+Wire Wire Line
+	4025 2225 4175 2225
+Wire Wire Line
+	4025 2100 4025 2225
+Wire Wire Line
+	4025 1750 4025 1800
+Wire Wire Line
+	3500 1750 4025 1750
+Wire Wire Line
+	4175 2250 4175 2225
+Wire Wire Line
+	4325 2400 4325 2625
+NoConn ~ 4175 2550
+Wire Wire Line
+	3700 2550 3700 2625
+Wire Wire Line
+	3700 2625 3425 2625
+Connection ~ 3700 2625
+Wire Wire Line
+	3125 1750 3125 2425
+Wire Wire Line
+	3700 2625 4025 2625
+Wire Wire Line
+	4025 2725 4025 2625
+Connection ~ 4025 2625
+Wire Wire Line
+	4025 2625 4325 2625
+Wire Wire Line
+	3125 2825 3125 3100
+$Comp
+L power:GND #PWR?
+U 1 1 6170BF85
+P 850 950
+F 0 "#PWR?" H 850 700 50  0001 C CNN
+F 1 "GND" H 855 777 50  0000 C CNN
+F 2 "" H 850 950 50  0001 C CNN
+F 3 "" H 850 950 50  0001 C CNN
+	1    850  950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  950  850  875 
+Wire Wire Line
+	850  875  775  875 
+$Comp
+L Device:R R?
+U 1 1 6170F12D
+P 4525 3300
+F 0 "R?" H 4455 3254 50  0000 R CNN
+F 1 "33k" H 4455 3345 50  0000 R CNN
+F 2 "" V 4455 3300 50  0001 C CNN
+F 3 "~" H 4525 3300 50  0001 C CNN
+	1    4525 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6170F88E
+P 4525 3525
+F 0 "#PWR?" H 4525 3275 50  0001 C CNN
+F 1 "GND" H 4530 3352 50  0000 C CNN
+F 2 "" H 4525 3525 50  0001 C CNN
+F 3 "" H 4525 3525 50  0001 C CNN
+	1    4525 3525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4525 3525 4525 3450
+$Comp
+L power:GND #PWR?
+U 1 1 6171035E
+P 4025 3525
+F 0 "#PWR?" H 4025 3275 50  0001 C CNN
+F 1 "GND" H 4030 3352 50  0000 C CNN
+F 2 "" H 4025 3525 50  0001 C CNN
+F 3 "" H 4025 3525 50  0001 C CNN
+	1    4025 3525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4025 3025 4025 3525
+Wire Wire Line
+	4525 3100 4525 3150
+Wire Wire Line
+	3125 3100 4525 3100
+Connection ~ 4525 3100
+Wire Wire Line
+	4325 1750 4025 1750
+Connection ~ 4025 1750
+Wire Wire Line
+	4525 2050 4525 3100
+Text GLabel 850  750  2    50   Input ~ 0
+In
+Wire Wire Line
+	850  750  775  750 
+Text GLabel 2925 1750 0    50   Input ~ 0
+In
+Wire Wire Line
+	2925 1750 3125 1750
+Connection ~ 3125 1750
+Text GLabel 5000 1750 2    50   Input ~ 0
+Out
+Wire Wire Line
+	5000 1750 4725 1750
+Text GLabel 10325 750  0    50   Input ~ 0
+Out
+Wire Wire Line
+	10325 750  10425 750 
+$EndSCHEMATC
