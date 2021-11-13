@@ -127,4 +127,6 @@ F5 "-5V" I L 3900 3800 50
 F6 "0V" I L 3900 3725 50 
 F7 "OUT" O R 4725 3500 50 
 $EndSheet
+Text Notes 3825 3150 0    50   ~ 10
+TO add:\n-reset integral in pids blocks\n
 $EndSCHEMATC

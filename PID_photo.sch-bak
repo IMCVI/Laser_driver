@@ -87,7 +87,7 @@ $EndComp
 Text HLabel 950  600  0    50   Input ~ 0
 Setpoint_I
 Text HLabel 950  700  0    50   Input ~ 0
-Error
+Error_photo
 Text HLabel 950  800  0    50   Input ~ 0
 +5V
 Text HLabel 950  1000 0    50   Input ~ 0

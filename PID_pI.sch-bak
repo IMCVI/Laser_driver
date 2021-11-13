@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 13 12
+Sheet 12 12
 Title ""
 Date ""
 Rev ""
@@ -87,7 +87,7 @@ $EndComp
 Text HLabel 950  600  0    50   Input ~ 0
 Setpoint_I
 Text HLabel 950  700  0    50   Input ~ 0
-Error
+Error_I
 Text HLabel 950  800  0    50   Input ~ 0
 +5V
 Text HLabel 950  1000 0    50   Input ~ 0
@@ -419,17 +419,6 @@ Wire Wire Line
 	5650 3975 5525 3975
 Connection ~ 5525 3975
 Wire Wire Line
-	5950 1700 6050 1700
-Wire Wire Line
-	6050 1700 6050 2900
-Wire Wire Line
-	6050 2900 5950 2900
-Wire Wire Line
-	6050 2900 6050 3975
-Wire Wire Line
-	6050 3975 5950 3975
-Connection ~ 6050 2900
-Wire Wire Line
 	1350 7000 1350 6950
 Wire Wire Line
 	1350 6950 1225 6950
@@ -490,9 +479,6 @@ Wire Wire Line
 	6550 2625 6550 2900
 Wire Wire Line
 	6550 2900 6600 2900
-Wire Wire Line
-	6050 2900 6550 2900
-Connection ~ 6550 2900
 Text Label 6475 3100 0    50   ~ 0
 0V
 Wire Wire Line
@@ -761,4 +747,65 @@ Wire Wire Line
 Connection ~ 1900 2900
 Wire Wire Line
 	1200 2900 1525 2900
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 61A3BD55
+P 6100 1450
+F 0 "J?" V 6064 1262 50  0000 R CNN
+F 1 "Conn_01x02" V 5973 1262 50  0000 R CNN
+F 2 "" H 6100 1450 50  0001 C CNN
+F 3 "~" H 6100 1450 50  0001 C CNN
+	1    6100 1450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6100 1700 6100 1650
+Wire Wire Line
+	5950 1700 6100 1700
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 61A427D5
+P 6000 2575
+F 0 "J?" V 6175 2625 50  0000 R CNN
+F 1 "Conn_01x02" V 6100 2875 50  0000 R CNN
+F 2 "" H 6000 2575 50  0001 C CNN
+F 3 "~" H 6000 2575 50  0001 C CNN
+	1    6000 2575
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5950 2900 6000 2900
+Wire Wire Line
+	6000 2900 6000 2775
+Wire Wire Line
+	6100 2775 6100 2900
+Wire Wire Line
+	6100 2900 6200 2900
+Connection ~ 6550 2900
+Wire Wire Line
+	6200 1650 6200 2900
+Connection ~ 6200 2900
+Wire Wire Line
+	6200 2900 6550 2900
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 61A533BF
+P 6025 3650
+F 0 "J?" V 6200 3700 50  0000 R CNN
+F 1 "Conn_01x02" V 6125 3950 50  0000 R CNN
+F 2 "" H 6025 3650 50  0001 C CNN
+F 3 "~" H 6025 3650 50  0001 C CNN
+	1    6025 3650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6200 2900 6200 3900
+Wire Wire Line
+	5950 3975 6025 3975
+Wire Wire Line
+	6025 3850 6025 3975
+Wire Wire Line
+	6125 3850 6125 3900
+Wire Wire Line
+	6125 3900 6200 3900
 $EndSCHEMATC

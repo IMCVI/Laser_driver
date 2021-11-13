@@ -104,18 +104,6 @@ F0 "Signal_conditioner" 50
 F1 "Signal_conditioner.sch" 50
 $EndSheet
 $Sheet
-S 3900 4525 825  800 
-U 61A28785
-F0 "PID_photo" 50
-F1 "PID_photo.sch" 50
-F2 "Setpoint_I" I L 3900 4600 50 
-F3 "Error" I L 3900 4675 50 
-F4 "+5V" I L 3900 4750 50 
-F5 "-5V" I L 3900 4900 50 
-F6 "0V" I L 3900 4825 50 
-F7 "OUT" O R 4725 4600 50 
-$EndSheet
-$Sheet
 S 3900 3425 825  800 
 U 619B51F3
 F0 "PID_I" 50
@@ -129,4 +117,16 @@ F7 "OUT" O R 4725 3500 50
 $EndSheet
 Text Notes 3825 3150 0    50   ~ 10
 TO add:\n-reset integral in pids blocks\n
+$Sheet
+S 3900 4750 825  800 
+U 61A63B19
+F0 "PID_photo" 50
+F1 "PID_photo.sch" 50
+F2 "Setpoint_I" I L 3900 4825 50 
+F3 "Error" I L 3900 4900 50 
+F4 "+5V" I L 3900 4975 50 
+F5 "-5V" I L 3900 5125 50 
+F6 "0V" I L 3900 5050 50 
+F7 "OUT" O R 4725 4825 50 
+$EndSheet
 $EndSCHEMATC
