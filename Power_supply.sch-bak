@@ -529,7 +529,7 @@ F 4 "AZ1117CH-5.0TRG1" H 5300 3550 50  0001 C CNN "MPN"
 	1    5300 3550
 	1    0    0    -1  
 $EndComp
-Text Label 4300 3550 0    50   ~ 0
+Text Label 4275 3550 0    50   ~ 0
 7V
 $Comp
 L Device:C C?
@@ -591,8 +591,6 @@ Wire Wire Line
 Wire Wire Line
 	4400 3550 4400 3575
 Connection ~ 4800 3550
-Wire Wire Line
-	4300 3550 4400 3550
 Connection ~ 4400 3550
 Wire Wire Line
 	5600 3550 5700 3550
@@ -1050,12 +1048,12 @@ Connection ~ 1725 4625
 $Comp
 L power:-5V #PWR?
 U 1 1 61B17643
-P 10850 1375
-F 0 "#PWR?" H 10850 1475 50  0001 C CNN
-F 1 "-5V" H 10865 1548 50  0000 C CNN
-F 2 "" H 10850 1375 50  0001 C CNN
-F 3 "" H 10850 1375 50  0001 C CNN
-	1    10850 1375
+P 10850 1525
+F 0 "#PWR?" H 10850 1625 50  0001 C CNN
+F 1 "-5V" H 10865 1698 50  0000 C CNN
+F 2 "" H 10850 1525 50  0001 C CNN
+F 3 "" H 10850 1525 50  0001 C CNN
+	1    10850 1525
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -1082,14 +1080,14 @@ F 3 "" H 10850 1175 50  0001 C CNN
 $EndComp
 Text HLabel 10975 1225 2    50   Output ~ 0
 +5V
-Text HLabel 10975 1325 2    50   Output ~ 0
+Text HLabel 10975 1475 2    50   Output ~ 0
 -5V
 Wire Wire Line
-	10850 1325 10975 1325
+	10850 1475 10975 1475
 Wire Wire Line
 	10850 1225 10975 1225
 Wire Wire Line
-	10850 1375 10850 1325
+	10850 1525 10850 1475
 Wire Wire Line
 	10850 1225 10850 1175
 Text Label 10775 575  0    50   ~ 0
@@ -1102,4 +1100,46 @@ Wire Wire Line
 	7250 1250 7150 1250
 Wire Wire Line
 	7150 1250 7150 1375
+Wire Wire Line
+	4275 3550 4400 3550
+$Comp
+L Device:L L?
+U 1 1 61BD524D
+P 4525 4950
+F 0 "L?" V 4715 4950 50  0000 C CNN
+F 1 "L" V 4624 4950 50  0000 C CNN
+F 2 "" H 4525 4950 50  0001 C CNN
+F 3 "~" H 4525 4950 50  0001 C CNN
+	1    4525 4950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61BD572F
+P 4325 5050
+F 0 "#PWR?" H 4325 4800 50  0001 C CNN
+F 1 "GND" H 4330 4877 50  0000 C CNN
+F 2 "" H 4325 5050 50  0001 C CNN
+F 3 "" H 4325 5050 50  0001 C CNN
+	1    4325 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4325 5050 4325 4950
+Wire Wire Line
+	4325 4950 4375 4950
+Text Label 2750 3550 2    50   ~ 0
+0V
+Wire Wire Line
+	2600 3550 2750 3550
+Text Label 4800 4950 2    50   ~ 0
+0V
+Wire Wire Line
+	4800 4950 4675 4950
+Text Label 10850 1350 0    50   ~ 0
+0V
+Text HLabel 10975 1350 2    50   Output ~ 0
+0V
+Wire Wire Line
+	10975 1350 10850 1350
 $EndSCHEMATC

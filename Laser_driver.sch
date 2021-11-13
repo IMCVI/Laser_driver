@@ -63,6 +63,9 @@ F4 "7V" O R 2300 2525 50
 F5 "3v3" O R 2300 2725 50 
 F6 "V_LD" O R 2300 2825 50 
 F7 "5V_D" O R 2300 2625 50 
+F8 "+5V" O R 2300 2925 50 
+F9 "-5V" O R 2300 3075 50 
+F10 "0V" O R 2300 3000 50 
 $EndSheet
 $Sheet
 S 6275 4125 650  650 
@@ -89,18 +92,6 @@ F6 "GND" I L 5300 4550 50
 F7 "SW" I L 5300 4450 50 
 $EndSheet
 $Sheet
-S 3900 3425 825  800 
-U 619B51F3
-F0 "PID" 50
-F1 "PID.sch" 50
-$EndSheet
-$Sheet
-S 3875 4500 825  800 
-U 61820F6B
-F0 "sheet61820F69" 50
-F1 "PID.sch" 50
-$EndSheet
-$Sheet
 S 5775 5225 625  625 
 U 61838EBB
 F0 "PD_amp" 50
@@ -112,4 +103,30 @@ U 61838F34
 F0 "Signal_conditioner" 50
 F1 "Signal_conditioner.sch" 50
 $EndSheet
+$Sheet
+S 3900 4525 825  800 
+U 61A28785
+F0 "PID_photo" 50
+F1 "PID_photo.sch" 50
+F2 "Setpoint_I" I L 3900 4600 50 
+F3 "Error" I L 3900 4675 50 
+F4 "+5V" I L 3900 4750 50 
+F5 "-5V" I L 3900 4900 50 
+F6 "0V" I L 3900 4825 50 
+F7 "OUT" O R 4725 4600 50 
+$EndSheet
+$Sheet
+S 3900 3425 825  800 
+U 619B51F3
+F0 "PID_I" 50
+F1 "PID_pI.sch" 50
+F2 "Setpoint_I" I L 3900 3500 50 
+F3 "Error" I L 3900 3575 50 
+F4 "+5V" I L 3900 3650 50 
+F5 "-5V" I L 3900 3800 50 
+F6 "0V" I L 3900 3725 50 
+F7 "OUT" O R 4725 3500 50 
+$EndSheet
+Text Notes 3825 3150 0    50   ~ 10
+TO add:\n-reset integral in pids blocks\n
 $EndSCHEMATC
