@@ -33,7 +33,7 @@ F 1 "HWE_JRC-21F(4100)" H 5080 2355 50  0000 L CNN
 F 2 "Lib:HWE_JRC-21F(4100)" H 5790 2360 50  0001 C CNN
 F 3 "" H 4650 2400 50  0001 C CNN
 	1    4650 2400
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 $Comp
 L power:+5V #PWR?
@@ -68,12 +68,12 @@ F 3 "~" H 6150 2525 50  0001 C CNN
 	1    6150 2525
 	0    1    1    0   
 $EndComp
-Text HLabel 9750 725  2    50   Output ~ 0
+Text HLabel 750  1325 0    50   Input ~ 0
 NC
-Text HLabel 9750 900  2    50   Output ~ 0
+Text HLabel 750  1150 0    50   Input ~ 0
 NO
-Text HLabel 750  1250 0    50   Input ~ 0
-IN
+Text HLabel 9750 1000 2    50   Output ~ 0
+OUT
 Text HLabel 750  750  0    50   Input ~ 0
 5V
 Text HLabel 750  1500 0    50   Input ~ 0
@@ -120,24 +120,14 @@ F 3 "https://www.onsemi.com/pub/Collateral/BC818-D.pdf" H 5750 2525 50  0001 L C
 	1    5750 2525
 	-1   0    0    -1  
 $EndComp
-Text Label 5100 2500 2    50   ~ 0
+Text Label 4225 2500 0    50   ~ 0
 NC
-Text Label 5100 2700 2    50   ~ 0
+Text Label 4225 2700 0    50   ~ 0
 NO
-Wire Wire Line
-	5100 2700 4950 2700
-Wire Wire Line
-	4950 2500 5100 2500
-Text Label 9550 725  0    50   ~ 0
+Text Label 950  1325 2    50   ~ 0
 NC
-Text Label 9550 900  0    50   ~ 0
+Text Label 950  1150 2    50   ~ 0
 NO
-Text Label 900  1250 2    50   ~ 0
-In
-Wire Wire Line
-	900  1250 750  1250
-Text Label 4200 2600 0    50   ~ 0
-In
 $Comp
 L power:GND #PWR?
 U 1 1 61832525
@@ -170,11 +160,21 @@ Wire Wire Line
 Wire Wire Line
 	6000 2525 5950 2525
 Wire Wire Line
-	4200 2600 4350 2600
-Wire Wire Line
 	6450 2525 6300 2525
 Wire Wire Line
-	9550 900  9750 900 
+	950  1150 750  1150
 Wire Wire Line
-	9750 725  9550 725 
+	750  1325 950  1325
+Wire Wire Line
+	4225 2700 4350 2700
+Wire Wire Line
+	4225 2500 4350 2500
+Text Label 9550 1000 0    50   ~ 0
+OUT
+Wire Wire Line
+	9550 1000 9750 1000
+Text Label 5150 2600 2    50   ~ 0
+OUT
+Wire Wire Line
+	5150 2600 4950 2600
 $EndSCHEMATC
