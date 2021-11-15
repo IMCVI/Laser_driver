@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 12
+Sheet 5 11
 Title ""
 Date ""
 Rev ""
@@ -692,18 +692,12 @@ Wire Wire Line
 	700  900  850  900 
 Wire Wire Line
 	850  900  850  1000
-Text Label 10775 875  0    50   ~ 0
-V_ld
 Text HLabel 10975 575  2    50   Output ~ 0
 7V
 Text HLabel 10975 675  2    50   Output ~ 0
 5V_D
 Text HLabel 10975 775  2    50   Output ~ 0
 3v3
-Text HLabel 10975 875  2    50   Output ~ 0
-V_LD
-Wire Wire Line
-	10775 875  10975 875 
 Wire Wire Line
 	10975 775  10775 775 
 Wire Wire Line

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 11 12
+Sheet 10 11
 Title ""
 Date ""
 Rev ""
@@ -110,9 +110,9 @@ F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 1900 7150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 950  600  0    50   Input ~ 0
-Setpoint_I
+PWM_I
 Text HLabel 950  700  0    50   Input ~ 0
-Error_I
+I_mes
 Text HLabel 950  900  0    50   Input ~ 0
 +5V
 Text HLabel 950  1100 0    50   Input ~ 0
@@ -588,32 +588,9 @@ Text Label 6475 3100 0    50   ~ 0
 0V
 Wire Wire Line
 	6475 3100 6600 3100
-$Comp
-L Device:R R?
-U 1 1 619938D0
-P 7425 3000
-AR Path="/619B51F3/619938D0" Ref="R?"  Part="1" 
-AR Path="/61820F6B/619938D0" Ref="R?"  Part="1" 
-AR Path="/61A28785/619938D0" Ref="R?"  Part="1" 
-AR Path="/61A63B19/619938D0" Ref="R?"  Part="1" 
-AR Path="/619BC68D/619938D0" Ref="R?"  Part="1" 
-AR Path="/619C27A2/619938D0" Ref="R?"  Part="1" 
-AR Path="/619C2E9F/619938D0" Ref="R?"  Part="1" 
-AR Path="/619C995F/619938D0" Ref="R?"  Part="1" 
-F 0 "R?" V 7218 3000 50  0000 C CNN
-F 1 "1k" V 7309 3000 50  0000 C CNN
-F 2 "" V 7355 3000 50  0001 C CNN
-F 3 "~" H 7425 3000 50  0001 C CNN
-	1    7425 3000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7275 3000 7250 3000
 Connection ~ 7250 3000
-Text Label 7750 3000 2    50   ~ 0
+Text Label 7425 3000 2    50   ~ 0
 OUT
-Wire Wire Line
-	7750 3000 7575 3000
 Text Label 10550 675  0    50   ~ 0
 OUT
 Text HLabel 10750 675  2    50   Output ~ 0
@@ -804,12 +781,10 @@ Text Label 1275 600  2    50   ~ 0
 Setpoint
 Wire Wire Line
 	1275 600  950  600 
-Text Label 1275 700  2    50   ~ 0
-Error
 Wire Wire Line
 	1275 700  950  700 
 Text Label 2275 2700 0    50   ~ 0
-Error
+I_mes
 Text Label 1200 2900 0    50   ~ 0
 Setpoint
 Wire Wire Line
@@ -1194,4 +1169,8 @@ Wire Wire Line
 	2650 5175 2875 5175
 Wire Wire Line
 	3850 5375 4150 5375
+Wire Wire Line
+	7250 3000 7425 3000
+Text Label 1275 700  2    50   ~ 0
+I_mes
 $EndSCHEMATC

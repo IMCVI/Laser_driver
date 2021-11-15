@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 12
+Sheet 1 11
 Title ""
 Date ""
 Rev ""
@@ -14,22 +14,22 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 7400 4150 775  625 
+S 6700 2500 775  625 
 U 616F2E6C
 F0 "Current_limiter" 50
 F1 "Current_limiter.sch" 50
-F2 "In" I L 7400 4250 50 
-F3 "GND" I L 7400 4350 50 
-F4 "Out" O R 8175 4250 50 
+F2 "In" I L 6700 2600 50 
+F3 "GND" I L 6700 2700 50 
+F4 "Out" O R 7475 2600 50 
 $EndSheet
 $Sheet
-S 1600 1325 750  525 
+S 1550 1575 750  525 
 U 61798DC5
 F0 "USB_UART" 50
 F1 "USB_UART.sch" 50
-F2 "TX" O R 2350 1425 50 
-F3 "RX" I R 2350 1525 50 
-F4 "GND" O R 2350 1775 50 
+F2 "TX" O R 2300 1675 50 
+F3 "RX" I R 2300 1775 50 
+F4 "GND" O R 2300 2025 50 
 $EndSheet
 $Sheet
 S 3150 1125 1000 950 
@@ -61,44 +61,48 @@ F2 "12V" I L 1625 2525 50
 F3 "GND" I L 1625 2625 50 
 F4 "7V" O R 2300 2525 50 
 F5 "3v3" O R 2300 2725 50 
-F6 "V_LD" O R 2300 2825 50 
-F7 "5V_D" O R 2300 2625 50 
-F8 "+5V" O R 2300 2925 50 
-F9 "-5V" O R 2300 3075 50 
-F10 "0V" O R 2300 3000 50 
+F6 "5V_D" O R 2300 2625 50 
+F7 "+5V" O R 2300 2925 50 
+F8 "-5V" O R 2300 3075 50 
+F9 "0V" O R 2300 3000 50 
 $EndSheet
 $Sheet
-S 6275 4125 650  650 
+S 6725 4225 650  650 
 U 619B5813
 F0 "Power_stage" 50
 F1 "Power_stage.sch" 50
+F2 "In" I L 6725 4400 50 
+F3 "GND" I L 6725 4500 50 
+F4 "Sink" I R 7375 4350 50 
 $EndSheet
 $Sheet
-S 8675 4150 850  700 
+S 6700 3325 850  700 
 U 619B5DD1
 F0 "Laser_diode" 50
 F1 "Laser_diode.sch" 50
+F2 "In" I R 7550 3400 50 
+F3 "Out" O R 7550 3950 50 
+F4 "+5V" I L 6700 3450 50 
+F5 "0V" I L 6700 3525 50 
+F6 "-5V" I L 6700 3600 50 
+F7 "PD_mes" O R 7550 3525 50 
+F8 "I_mes" O R 7550 3625 50 
+F9 "7V" I L 6700 3375 50 
 $EndSheet
 $Sheet
-S 5300 4175 575  600 
+S 5350 4100 575  600 
 U 619B62A8
 F0 "Switch" 50
 F1 "Switch.sch" 50
-F2 "NC" O R 5875 4250 50 
-F3 "NO" O R 5875 4350 50 
-F4 "IN" I L 5300 4350 50 
-F5 "5V" I L 5300 4250 50 
-F6 "GND" I L 5300 4550 50 
-F7 "SW" I L 5300 4450 50 
+F2 "5V" I L 5350 4175 50 
+F3 "GND" I L 5350 4475 50 
+F4 "SW" I L 5350 4400 50 
+F5 "NC" I L 5350 4250 50 
+F6 "NO" I L 5350 4325 50 
+F7 "OUT" O R 5925 4400 50 
 $EndSheet
 $Sheet
-S 5775 5225 625  625 
-U 61838EBB
-F0 "PD_amp" 50
-F1 "PD_amp.sch" 50
-$EndSheet
-$Sheet
-S 5750 3075 550  575 
+S 5300 3050 550  575 
 U 61838F34
 F0 "Signal_conditioner" 50
 F1 "Signal_conditioner.sch" 50
@@ -108,27 +112,333 @@ S 3900 3425 825  800
 U 619B51F3
 F0 "PID_I" 50
 F1 "PID_pI.sch" 50
-F2 "Setpoint_I" I L 3900 3500 50 
-F3 "+5V" I L 3900 3725 50 
-F4 "-5V" I L 3900 3875 50 
-F5 "0V" I L 3900 3800 50 
-F6 "OUT" O R 4725 3500 50 
-F7 "Error_I" I L 3900 3575 50 
-F8 "GND" I L 3900 3950 50 
-F9 "Int_reset" I L 3900 3650 50 
+F2 "+5V" I L 3900 3725 50 
+F3 "-5V" I L 3900 3875 50 
+F4 "0V" I L 3900 3800 50 
+F5 "OUT" O R 4725 3500 50 
+F6 "GND" I L 3900 3950 50 
+F7 "Int_reset" I L 3900 3650 50 
+F8 "PWM_I" I L 3900 3500 50 
+F9 "I_mes" I L 3900 3575 50 
 $EndSheet
 $Sheet
-S 3950 4825 825  800 
+S 3925 4650 825  800 
 U 619C995F
 F0 "PID_ph" 50
 F1 "PID_ph.sch" 50
-F2 "Setpoint_I" I L 3950 4900 50 
-F3 "+5V" I L 3950 5125 50 
-F4 "-5V" I L 3950 5275 50 
-F5 "0V" I L 3950 5200 50 
-F6 "OUT" O R 4775 4900 50 
-F7 "Error_I" I L 3950 4975 50 
-F8 "GND" I L 3950 5350 50 
-F9 "Int_reset" I L 3950 5050 50 
+F2 "+5V" I L 3925 4950 50 
+F3 "-5V" I L 3925 5100 50 
+F4 "0V" I L 3925 5025 50 
+F5 "OUT" O R 4750 4725 50 
+F6 "GND" I L 3925 5175 50 
+F7 "Int_reset" I L 3925 4875 50 
+F8 "PWM_ph" I L 3925 4725 50 
+F9 "PD_mes" I L 3925 4800 50 
 $EndSheet
+Wire Wire Line
+	4725 3500 4900 3500
+Wire Wire Line
+	4900 3500 4900 4250
+Wire Wire Line
+	4900 4250 5350 4250
+Wire Wire Line
+	4900 4725 4900 4325
+Wire Wire Line
+	4750 4725 4900 4725
+Wire Wire Line
+	4900 4325 5350 4325
+Wire Wire Line
+	5925 4400 6725 4400
+Text Label 4475 1300 2    50   ~ 0
+PWM_I
+Text Label 4475 1375 2    50   ~ 0
+PWM_ph
+Wire Wire Line
+	4475 1300 4150 1300
+Wire Wire Line
+	4150 1375 4475 1375
+Text Label 3550 3500 0    50   ~ 0
+PWM_I
+Text Label 3550 4725 0    50   ~ 0
+PWM_ph
+Text Label 2500 2525 2    50   ~ 0
+7V
+Wire Wire Line
+	2500 2525 2300 2525
+Text Label 6575 2600 0    50   ~ 0
+7V
+Wire Wire Line
+	6575 2600 6700 2600
+$Comp
+L power:GND #PWR?
+U 1 1 61A051A7
+P 1500 2700
+F 0 "#PWR?" H 1500 2450 50  0001 C CNN
+F 1 "GND" H 1505 2527 50  0000 C CNN
+F 2 "" H 1500 2700 50  0001 C CNN
+F 3 "" H 1500 2700 50  0001 C CNN
+	1    1500 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 2700 1500 2625
+Wire Wire Line
+	1500 2625 1625 2625
+$Comp
+L power:GND #PWR?
+U 1 1 61A05A36
+P 2400 2125
+F 0 "#PWR?" H 2400 1875 50  0001 C CNN
+F 1 "GND" H 2405 1952 50  0000 C CNN
+F 2 "" H 2400 2125 50  0001 C CNN
+F 3 "" H 2400 2125 50  0001 C CNN
+	1    2400 2125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 2125 2400 2025
+Wire Wire Line
+	2400 2025 2300 2025
+$Comp
+L power:GND #PWR?
+U 1 1 61A06D59
+P 3050 2125
+F 0 "#PWR?" H 3050 1875 50  0001 C CNN
+F 1 "GND" H 3055 1952 50  0000 C CNN
+F 2 "" H 3050 2125 50  0001 C CNN
+F 3 "" H 3050 2125 50  0001 C CNN
+	1    3050 2125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 2125 3050 2025
+Wire Wire Line
+	3050 2025 3150 2025
+$Comp
+L power:GND #PWR?
+U 1 1 61A07937
+P 6575 2775
+F 0 "#PWR?" H 6575 2525 50  0001 C CNN
+F 1 "GND" H 6580 2602 50  0000 C CNN
+F 2 "" H 6575 2775 50  0001 C CNN
+F 3 "" H 6575 2775 50  0001 C CNN
+	1    6575 2775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6575 2775 6575 2700
+Wire Wire Line
+	6575 2700 6700 2700
+$Comp
+L power:GND #PWR?
+U 1 1 61A095F9
+P 6625 4600
+F 0 "#PWR?" H 6625 4350 50  0001 C CNN
+F 1 "GND" H 6630 4427 50  0000 C CNN
+F 2 "" H 6625 4600 50  0001 C CNN
+F 3 "" H 6625 4600 50  0001 C CNN
+	1    6625 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6625 4600 6625 4500
+Wire Wire Line
+	6625 4500 6725 4500
+$Comp
+L power:GND #PWR?
+U 1 1 61A0A9DB
+P 5250 4575
+F 0 "#PWR?" H 5250 4325 50  0001 C CNN
+F 1 "GND" H 5255 4402 50  0000 C CNN
+F 2 "" H 5250 4575 50  0001 C CNN
+F 3 "" H 5250 4575 50  0001 C CNN
+	1    5250 4575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 4575 5250 4475
+Wire Wire Line
+	5250 4475 5350 4475
+$Comp
+L power:GND #PWR?
+U 1 1 61A0C2A1
+P 3775 4025
+F 0 "#PWR?" H 3775 3775 50  0001 C CNN
+F 1 "GND" H 3780 3852 50  0000 C CNN
+F 2 "" H 3775 4025 50  0001 C CNN
+F 3 "" H 3775 4025 50  0001 C CNN
+	1    3775 4025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3775 4025 3775 3950
+Wire Wire Line
+	3775 3950 3900 3950
+$Comp
+L power:GND #PWR?
+U 1 1 61A0D288
+P 3800 5250
+F 0 "#PWR?" H 3800 5000 50  0001 C CNN
+F 1 "GND" H 3805 5077 50  0000 C CNN
+F 2 "" H 3800 5250 50  0001 C CNN
+F 3 "" H 3800 5250 50  0001 C CNN
+	1    3800 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 5250 3800 5175
+Wire Wire Line
+	3800 5175 3925 5175
+Text Label 2500 2725 2    50   ~ 0
+3V3
+Wire Wire Line
+	2500 2725 2300 2725
+Text Label 3000 1175 0    50   ~ 0
+3V3
+Wire Wire Line
+	3000 1175 3150 1175
+Wire Wire Line
+	3150 1925 2400 1925
+Wire Wire Line
+	2400 1925 2400 1775
+Wire Wire Line
+	2400 1775 2300 1775
+Wire Wire Line
+	3150 1850 2450 1850
+Wire Wire Line
+	2450 1850 2450 1675
+Wire Wire Line
+	2450 1675 2300 1675
+Wire Wire Line
+	2500 2625 2300 2625
+Text Label 5150 4175 0    50   ~ 0
+5V_D
+Text Label 4475 1575 2    50   ~ 0
+SW
+Wire Wire Line
+	4475 1575 4150 1575
+Text Label 5225 4400 0    50   ~ 0
+SW
+Wire Wire Line
+	5225 4400 5350 4400
+Wire Wire Line
+	5150 4175 5350 4175
+Text Label 2500 2625 2    50   ~ 0
+5V_D
+Text Label 2550 2925 2    50   ~ 0
+5V_A
+Text Label 2550 3000 2    50   ~ 0
+0V_A
+Text Label 2550 3075 2    50   ~ 0
+-5V_A
+Wire Wire Line
+	2550 2925 2300 2925
+Wire Wire Line
+	2550 3000 2300 3000
+Wire Wire Line
+	2550 3075 2300 3075
+Text Label 3550 3725 0    50   ~ 0
+5V_A
+Text Label 3550 3800 0    50   ~ 0
+0V_A
+Text Label 3550 3875 0    50   ~ 0
+-5V_A
+Text Label 3550 4950 0    50   ~ 0
+5V_A
+Text Label 3550 5025 0    50   ~ 0
+0V_A
+Text Label 3550 5100 0    50   ~ 0
+-5V_A
+Text Notes 5500 1300 0    50   ~ 0
+TODO:\nadd unity gain to errors and uC error amps\nadd LD\nadd PD amp
+Text Label 4475 1500 2    50   ~ 0
+Int_reset
+Wire Wire Line
+	4475 1500 4150 1500
+Text Label 3550 3650 0    50   ~ 0
+Int_reset
+Text Label 3550 4875 0    50   ~ 0
+Int_reset
+Wire Wire Line
+	3550 4875 3925 4875
+Wire Wire Line
+	3550 3650 3900 3650
+Wire Wire Line
+	3550 3575 3900 3575
+Wire Wire Line
+	3550 3500 3900 3500
+Wire Wire Line
+	3550 3725 3900 3725
+Wire Wire Line
+	3550 3800 3900 3800
+Wire Wire Line
+	3550 3875 3900 3875
+Wire Wire Line
+	3550 4725 3925 4725
+Wire Wire Line
+	3550 4800 3925 4800
+Wire Wire Line
+	3550 4950 3925 4950
+Wire Wire Line
+	3550 5025 3925 5025
+Wire Wire Line
+	3550 5100 3925 5100
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 61A76CA3
+P 1050 2625
+F 0 "J?" H 968 2300 50  0000 C CNN
+F 1 "Conn_01x02" H 968 2391 50  0000 C CNN
+F 2 "" H 1050 2625 50  0001 C CNN
+F 3 "~" H 1050 2625 50  0001 C CNN
+	1    1050 2625
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1625 2525 1250 2525
+Wire Wire Line
+	1500 2625 1250 2625
+Connection ~ 1500 2625
+Text Label 1450 2525 0    50   ~ 0
+12V
+Text Label 6425 3600 0    50   ~ 0
+-5V_A
+Wire Wire Line
+	6425 3600 6700 3600
+Text Label 6425 3525 0    50   ~ 0
+0V_A
+Wire Wire Line
+	6425 3525 6700 3525
+Text Label 6425 3450 0    50   ~ 0
+5V_A
+Wire Wire Line
+	6425 3450 6700 3450
+Text Label 6425 3375 0    50   ~ 0
+7V
+Wire Wire Line
+	6425 3375 6700 3375
+Wire Wire Line
+	7550 3400 7650 3400
+Wire Wire Line
+	7650 3400 7650 2600
+Wire Wire Line
+	7650 2600 7475 2600
+Wire Wire Line
+	7375 4350 7650 4350
+Wire Wire Line
+	7650 4350 7650 3950
+Wire Wire Line
+	7650 3950 7550 3950
+Text Label 7850 3525 2    50   ~ 0
+PD_mes
+Text Label 7850 3625 2    50   ~ 0
+I_mes
+Wire Wire Line
+	7850 3625 7550 3625
+Wire Wire Line
+	7550 3525 7850 3525
+Text Label 3550 4800 0    50   ~ 0
+PD_mes
+Text Label 3550 3575 0    50   ~ 0
+I_mes
 $EndSCHEMATC

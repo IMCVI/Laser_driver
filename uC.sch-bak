@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 12
+Sheet 4 11
 Title ""
 Date ""
 Rev ""
@@ -667,8 +667,6 @@ Text Label 10375 775  0    50   ~ 0
 Int_reset
 Text Label 10375 1000 0    50   ~ 0
 PWM_ph
-Text Label 10350 1225 0    50   ~ 0
-Led_status
 $Comp
 L power:GND #PWR?
 U 1 1 61926360
@@ -763,10 +761,49 @@ Wire Wire Line
 	1025 2425 1250 2425
 Wire Wire Line
 	10375 1125 10750 1125
-Wire Wire Line
-	10350 1225 10750 1225
 Text HLabel 10750 1125 2    50   Output ~ 0
 STM_TX
-Text HLabel 10750 1225 2    50   Output ~ 0
-LED_Status
+Text Label 9475 2625 0    50   ~ 0
+Led_status
+$Comp
+L Device:LED D?
+U 1 1 61A4BB8B
+P 10425 2425
+F 0 "D?" V 10464 2307 50  0000 R CNN
+F 1 "LED" V 10373 2307 50  0000 R CNN
+F 2 "" H 10425 2425 50  0001 C CNN
+F 3 "~" H 10425 2425 50  0001 C CNN
+	1    10425 2425
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61A51FB7
+P 10050 2625
+F 0 "R?" V 9843 2625 50  0000 C CNN
+F 1 "1k" V 9934 2625 50  0000 C CNN
+F 2 "" V 9980 2625 50  0001 C CNN
+F 3 "~" H 10050 2625 50  0001 C CNN
+	1    10050 2625
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9475 2625 9900 2625
+Wire Wire Line
+	10200 2625 10425 2625
+Wire Wire Line
+	10425 2625 10425 2575
+$Comp
+L power:+3V3 #PWR?
+U 1 1 61A62195
+P 10425 2225
+F 0 "#PWR?" H 10425 2075 50  0001 C CNN
+F 1 "+3V3" H 10440 2398 50  0000 C CNN
+F 2 "" H 10425 2225 50  0001 C CNN
+F 3 "" H 10425 2225 50  0001 C CNN
+	1    10425 2225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10425 2225 10425 2275
 $EndSCHEMATC
