@@ -528,12 +528,8 @@ Text Label 6375 3575 0    50   ~ 0
 Error_I
 Text Label 8350 2475 2    50   ~ 0
 I
-Text Label 8350 2575 2    50   ~ 0
-Setpoint_I
 Text Label 8350 3075 2    50   ~ 0
 Error_ph
-Text Label 8350 3175 2    50   ~ 0
-Setpoint_ph
 Text Label 8350 2975 2    50   ~ 0
 Photo
 Text Label 8350 3375 2    50   ~ 0
@@ -555,8 +551,6 @@ Wire Wire Line
 Wire Wire Line
 	7875 3275 8350 3275
 Wire Wire Line
-	7875 3175 8350 3175
-Wire Wire Line
 	7875 3075 8350 3075
 Wire Wire Line
 	7875 2975 8350 2975
@@ -567,14 +561,8 @@ Wire Wire Line
 Wire Wire Line
 	7875 2675 8350 2675
 Wire Wire Line
-	7875 2575 8350 2575
-Wire Wire Line
 	7875 2475 8350 2475
 NoConn ~ 6875 2675
-Text Label 5400 3650 2    50   ~ 0
-Setpoint_ph
-Wire Wire Line
-	5400 3650 4900 3650
 Wire Wire Line
 	4900 4250 5400 4250
 Wire Wire Line
@@ -583,8 +571,6 @@ Text Label 5400 3950 2    50   ~ 0
 SW
 Wire Wire Line
 	4900 2950 5400 2950
-Text Label 5400 3050 2    50   ~ 0
-Setpoint_I
 Text Label 3150 3050 0    50   ~ 0
 Error_I
 Text Label 5400 2950 2    50   ~ 0
@@ -593,8 +579,6 @@ Wire Wire Line
 	5400 3250 4900 3250
 Wire Wire Line
 	4900 3150 5400 3150
-Wire Wire Line
-	4900 3050 5400 3050
 Text Label 5400 3350 2    50   ~ 0
 PWM_I
 Text Label 5400 3450 2    50   ~ 0
@@ -649,8 +633,6 @@ NoConn ~ 4900 4050
 NoConn ~ 4900 3750
 Text Label 10375 675  0    50   ~ 0
 SW
-Text Label 1250 1825 0    50   ~ 0
-Setpoint_I
 Text Label 1250 2025 0    50   ~ 0
 Error_I
 Text Label 1250 1925 0    50   ~ 0
@@ -661,8 +643,6 @@ Text Label 1250 2225 0    50   ~ 0
 Photo
 Text Label 1250 2325 0    50   ~ 0
 Error_ph
-Text Label 1250 2125 0    50   ~ 0
-Setpoint_ph
 Text Label 10375 775  0    50   ~ 0
 Int_reset
 Text Label 10375 1000 0    50   ~ 0
@@ -691,14 +671,10 @@ F 3 "" H 1325 1650 50  0001 C CNN
 $EndComp
 Text HLabel 1025 1725 0    50   Input ~ 0
 3v3
-Text HLabel 1025 1825 0    50   Input ~ 0
-Setpoint_I
 Text HLabel 1025 1925 0    50   Input ~ 0
 I
 Text HLabel 1025 2025 0    50   Input ~ 0
 Error_I
-Text HLabel 1025 2125 0    50   Input ~ 0
-Setpoint_ph
 Text HLabel 1025 2225 0    50   Input ~ 0
 Photo
 Text HLabel 1025 2325 0    50   Input ~ 0
@@ -710,13 +686,9 @@ Wire Wire Line
 Wire Wire Line
 	1325 1725 1325 1650
 Wire Wire Line
-	1025 1825 1250 1825
-Wire Wire Line
 	1025 1925 1250 1925
 Wire Wire Line
 	1025 2025 1250 2025
-Wire Wire Line
-	1025 2125 1250 2125
 Wire Wire Line
 	1025 2225 1250 2225
 Wire Wire Line

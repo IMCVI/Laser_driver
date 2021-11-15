@@ -32,27 +32,6 @@ F3 "RX" I R 2300 1775 50
 F4 "GND" O R 2300 2025 50 
 $EndSheet
 $Sheet
-S 3150 1125 1000 950 
-U 617D45B9
-F0 "uC" 50
-F1 "uC.sch" 50
-F2 "3v3" I L 3150 1175 50 
-F3 "Setpoint_I" I L 3150 1300 50 
-F4 "I" I L 3150 1375 50 
-F5 "Error_I" I L 3150 1450 50 
-F6 "Setpoint_ph" I L 3150 1575 50 
-F7 "Photo" I L 3150 1650 50 
-F8 "Error_ph" I L 3150 1725 50 
-F9 "GND" I L 3150 2025 50 
-F10 "SW" O R 4150 1575 50 
-F11 "PWM_I" O R 4150 1300 50 
-F12 "PWM_ph" O R 4150 1375 50 
-F13 "Int_reset" O R 4150 1500 50 
-F14 "STM_RX" I L 3150 1850 50 
-F15 "STM_TX" O L 3150 1925 50 
-F16 "LED_Status" O R 4150 1175 50 
-$EndSheet
-$Sheet
 S 1625 2450 675  675 
 U 619B55CB
 F0 "Power_supply" 50
@@ -102,7 +81,7 @@ F6 "NO" I L 5350 4325 50
 F7 "OUT" O R 5925 4400 50 
 $EndSheet
 $Sheet
-S 5300 3050 550  575 
+S 5200 2100 550  575 
 U 61838F34
 F0 "Signal_conditioner" 50
 F1 "Signal_conditioner.sch" 50
@@ -350,7 +329,7 @@ Text Label 3550 5025 0    50   ~ 0
 Text Label 3550 5100 0    50   ~ 0
 -5V_A
 Text Notes 5500 1300 0    50   ~ 0
-TODO:\nadd unity gain to errors and uC error amps\nadd LD\nadd PD amp
+TODO:\nadd signal conditioner\n
 Text Label 4475 1500 2    50   ~ 0
 Int_reset
 Wire Wire Line
@@ -441,4 +420,23 @@ Text Label 3550 4800 0    50   ~ 0
 PD_mes
 Text Label 3550 3575 0    50   ~ 0
 I_mes
+$Sheet
+S 3150 1125 1000 950 
+U 617D45B9
+F0 "uC" 50
+F1 "uC.sch" 50
+F2 "3v3" I L 3150 1175 50 
+F3 "I" I L 3150 1375 50 
+F4 "Error_I" I L 3150 1450 50 
+F5 "Photo" I L 3150 1650 50 
+F6 "Error_ph" I L 3150 1725 50 
+F7 "GND" I L 3150 2025 50 
+F8 "SW" O R 4150 1575 50 
+F9 "PWM_I" O R 4150 1300 50 
+F10 "PWM_ph" O R 4150 1375 50 
+F11 "Int_reset" O R 4150 1500 50 
+F12 "STM_RX" I L 3150 1850 50 
+F13 "STM_TX" O L 3150 1925 50 
+F14 "LED_Status" O R 4150 1175 50 
+$EndSheet
 $EndSCHEMATC
